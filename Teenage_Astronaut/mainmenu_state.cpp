@@ -24,7 +24,7 @@ void MainMenuState::Init(Engine* game){
     text2 = LTexture();
     text2.setFontSize(20);
     text1.loadFromRenderedText("Teenage Astronaut", {255,255,255}, game->renderer);
-    text2.loadFromRenderedText("SPACE TO START", {255,255,255}, game->renderer);
+    text2.loadFromRenderedText("SPACE to start", {255,255,255}, game->renderer);
 }
 
 void MainMenuState::Cleanup(){}

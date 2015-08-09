@@ -72,7 +72,6 @@
 		AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tilemap.cpp; sourceTree = "<group>"; };
 		AEE9970C1B75433300E7C1B3 /* Tilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tilemap.h; sourceTree = "<group>"; };
 		AEE9970E1B75459B00E7C1B3 /* test.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.csv; sourceTree = "<group>"; };
-		AEE997101B75A17300E7C1B3 /* INI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INI.h; sourceTree = "<group>"; };
 		AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
 		AEE997121B75ACC900E7C1B3 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
 		AEFC65F11B73EDB40031F11C /* LTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LTexture.cpp; sourceTree = "<group>"; };
@@ -122,7 +121,6 @@
 			children = (
 				AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */,
 				AEE997121B75ACC900E7C1B3 /* tinyxml2.h */,
-				AEE997101B75A17300E7C1B3 /* INI.h */,
 				AE825C651B71A6F300499A35 /* main.cpp */,
 				AEFC65F01B73EC660031F11C /* States */,
 				AEE997051B75401C00E7C1B3 /* Entities */,
