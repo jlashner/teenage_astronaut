@@ -1,18 +1,31 @@
-//
-//  main.cpp
-//  Teenage_Astronaut
-//
-//  Created by Jacob Lashner on 8/4/15.
-//  Copyright (c) 2015 Teenage_Astronaut. All rights reserved.
-//
+/*This source code copyrighted by Lazy Foo' Productions (2004-2015)
+ and may not be redistributed without written permission.*/
 
-#include <iostream>
+//Using SDL and standard IO
 
-int main(int argc, const char * argv[])
+#include "Engine.h"
+#include "mainmenu_state.h"
+
+int main ( int argc, char *argv[] )
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+	Engine game;
+    
+	// initialize the engine
+	game.Init( "Engine Test v1.0" );
+    
+	// load the intro
+	game.ChangeState( MainMenuState::Instance());
+    
+	// main loop
+	while ( game.Running() )
+	{
+		game.HandleEvents();
+		game.Update();
+		game.Draw();
+	}
+    
+	// cleanup the engine
+	game.Cleanup();
+    
+	return 0;
 }
-

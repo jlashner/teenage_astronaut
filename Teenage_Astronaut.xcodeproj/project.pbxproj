@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE825C661B71A6F300499A35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE825C651B71A6F300499A35 /* main.cpp */; };
-		AE825C681B71A6F300499A35 /* Teenage_Astronaut.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */; };
+		AE825C9E1B71A8CE00499A35 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE825C9D1B71A8CE00499A35 /* SDL2.framework */; };
+		AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE825C651B71A6F300499A35 /* main.cpp */; };
+		AEA0F3B61B72496A00BE7633 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B41B72496A00BE7633 /* Player.cpp */; };
+		AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B71B72523F00BE7633 /* Timer.cpp */; };
+		AEA0F3BC1B72B92300BE7633 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3BA1B72B92300BE7633 /* Engine.cpp */; };
+		AEA0F3C51B72C43B00BE7633 /* mainmenu_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3C31B72C43B00BE7633 /* mainmenu_state.cpp */; };
+		AEA0F3D31B72D00200BE7633 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */; };
+		AEE997041B752B2800E7C1B3 /* astronaut_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE997031B752B2800E7C1B3 /* astronaut_sprite.png */; };
+		AEE9970A1B75432600E7C1B3 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE997081B75432600E7C1B3 /* Tile.cpp */; };
+		AEE9970D1B75433300E7C1B3 /* Tilemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */; };
+		AEE997131B75ACC900E7C1B3 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */; };
+		AEFC65F31B73EDB40031F11C /* LTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEFC65F11B73EDB40031F11C /* LTexture.cpp */; };
+		AEFC65F51B73EFA00031F11C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFC65F41B73EFA00031F11C /* SDL2_image.framework */; };
+		AEFC662C1B73FAEA0031F11C /* Teenage_Astronaut in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE825C621B71A6F300499A35 /* Teenage_Astronaut */; };
+		AEFC664A1B73FCF50031F11C /* hello_world.bmp in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B21B7247A800BE7633 /* hello_world.bmp */; };
+		AEFC664B1B73FD0C0031F11C /* x.bmp in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B11B7247A000BE7633 /* x.bmp */; };
+		AEFC664E1B73FEEC0031F11C /* Aller_Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3D01B72CD9B00BE7633 /* Aller_Rg.ttf */; };
+		AEFC664F1B73FEEF0031F11C /* Aller_LtIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3CF1B72CD9B00BE7633 /* Aller_LtIt.ttf */; };
+		AEFC66521B7449C00031F11C /* level_1_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEFC66501B7449C00031F11C /* level_1_state.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AE825C601B71A6F300499A35 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 7;
 			files = (
-				AE825C681B71A6F300499A35 /* Teenage_Astronaut.1 in CopyFiles */,
+				AEFC662C1B73FAEA0031F11C /* Teenage_Astronaut in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -28,6 +45,41 @@
 		AE825C621B71A6F300499A35 /* Teenage_Astronaut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Teenage_Astronaut; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE825C651B71A6F300499A35 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Teenage_Astronaut.1; sourceTree = "<group>"; };
+		AE825C9D1B71A8CE00499A35 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		AEA0F3B11B7247A000BE7633 /* x.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = x.bmp; path = ../assets/x.bmp; sourceTree = "<group>"; };
+		AEA0F3B21B7247A800BE7633 /* hello_world.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = hello_world.bmp; path = ../assets/hello_world.bmp; sourceTree = "<group>"; };
+		AEA0F3B41B72496A00BE7633 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		AEA0F3B51B72496A00BE7633 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		AEA0F3B71B72523F00BE7633 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		AEA0F3B81B72523F00BE7633 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		AEA0F3BA1B72B92300BE7633 /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
+		AEA0F3BB1B72B92300BE7633 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		AEA0F3BE1B72BBA900BE7633 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		AEA0F3C31B72C43B00BE7633 /* mainmenu_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainmenu_state.cpp; sourceTree = "<group>"; };
+		AEA0F3C41B72C43B00BE7633 /* mainmenu_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainmenu_state.h; sourceTree = "<group>"; };
+		AEA0F3CA1B72CD9B00BE7633 /* Aller Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Aller Font License.txt"; sourceTree = "<group>"; };
+		AEA0F3CB1B72CD9B00BE7633 /* Aller_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Bd.ttf; sourceTree = "<group>"; };
+		AEA0F3CC1B72CD9B00BE7633 /* Aller_BdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_BdIt.ttf; sourceTree = "<group>"; };
+		AEA0F3CD1B72CD9B00BE7633 /* Aller_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_It.ttf; sourceTree = "<group>"; };
+		AEA0F3CE1B72CD9B00BE7633 /* Aller_Lt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Lt.ttf; sourceTree = "<group>"; };
+		AEA0F3CF1B72CD9B00BE7633 /* Aller_LtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_LtIt.ttf; sourceTree = "<group>"; };
+		AEA0F3D01B72CD9B00BE7633 /* Aller_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Rg.ttf; sourceTree = "<group>"; };
+		AEA0F3D11B72CD9B00BE7633 /* AllerDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllerDisplay.ttf; sourceTree = "<group>"; };
+		AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		AEE997031B752B2800E7C1B3 /* astronaut_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut_sprite.png; sourceTree = "<group>"; };
+		AEE997081B75432600E7C1B3 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		AEE997091B75432600E7C1B3 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tilemap.cpp; sourceTree = "<group>"; };
+		AEE9970C1B75433300E7C1B3 /* Tilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tilemap.h; sourceTree = "<group>"; };
+		AEE9970E1B75459B00E7C1B3 /* test.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.csv; sourceTree = "<group>"; };
+		AEE997101B75A17300E7C1B3 /* INI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INI.h; sourceTree = "<group>"; };
+		AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
+		AEE997121B75ACC900E7C1B3 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		AEFC65F11B73EDB40031F11C /* LTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LTexture.cpp; sourceTree = "<group>"; };
+		AEFC65F21B73EDB40031F11C /* LTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTexture.h; sourceTree = "<group>"; };
+		AEFC65F41B73EFA00031F11C /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		AEFC66501B7449C00031F11C /* level_1_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = level_1_state.cpp; sourceTree = "<group>"; };
+		AEFC66511B7449C00031F11C /* level_1_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level_1_state.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFC65F51B73EFA00031F11C /* SDL2_image.framework in Frameworks */,
+				AEA0F3D31B72D00200BE7633 /* SDL2_ttf.framework in Frameworks */,
+				AE825C9E1B71A8CE00499A35 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +99,11 @@
 		AE825C591B71A6F300499A35 = {
 			isa = PBXGroup;
 			children = (
+				AEE9970E1B75459B00E7C1B3 /* test.csv */,
+				AEFC66471B73FC710031F11C /* Resources */,
+				AEFC65F41B73EFA00031F11C /* SDL2_image.framework */,
+				AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */,
+				AE825C9D1B71A8CE00499A35 /* SDL2.framework */,
 				AE825C641B71A6F300499A35 /* Teenage_Astronaut */,
 				AE825C631B71A6F300499A35 /* Products */,
 			);
@@ -60,10 +120,105 @@
 		AE825C641B71A6F300499A35 /* Teenage_Astronaut */ = {
 			isa = PBXGroup;
 			children = (
+				AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */,
+				AEE997121B75ACC900E7C1B3 /* tinyxml2.h */,
+				AEE997101B75A17300E7C1B3 /* INI.h */,
 				AE825C651B71A6F300499A35 /* main.cpp */,
+				AEFC65F01B73EC660031F11C /* States */,
+				AEE997051B75401C00E7C1B3 /* Entities */,
+				AEA0F3B71B72523F00BE7633 /* Timer.cpp */,
+				AEE997071B75416900E7C1B3 /* Tilemaps */,
+				AEA0F3B81B72523F00BE7633 /* Timer.h */,
+				AEFC65F11B73EDB40031F11C /* LTexture.cpp */,
+				AEFC65F21B73EDB40031F11C /* LTexture.h */,
+				AEA0F3BA1B72B92300BE7633 /* Engine.cpp */,
+				AEA0F3BB1B72B92300BE7633 /* Engine.h */,
+				AEA0F3BE1B72BBA900BE7633 /* GameState.h */,
 				AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */,
 			);
 			path = Teenage_Astronaut;
+			sourceTree = "<group>";
+		};
+		AEA0F3C81B72CD9B00BE7633 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0F3C91B72CD9B00BE7633 /* Aller */,
+			);
+			name = fonts;
+			path = ../assets/fonts;
+			sourceTree = "<group>";
+		};
+		AEA0F3C91B72CD9B00BE7633 /* Aller */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0F3CA1B72CD9B00BE7633 /* Aller Font License.txt */,
+				AEA0F3CB1B72CD9B00BE7633 /* Aller_Bd.ttf */,
+				AEA0F3CC1B72CD9B00BE7633 /* Aller_BdIt.ttf */,
+				AEA0F3CD1B72CD9B00BE7633 /* Aller_It.ttf */,
+				AEA0F3CE1B72CD9B00BE7633 /* Aller_Lt.ttf */,
+				AEA0F3CF1B72CD9B00BE7633 /* Aller_LtIt.ttf */,
+				AEA0F3D01B72CD9B00BE7633 /* Aller_Rg.ttf */,
+				AEA0F3D11B72CD9B00BE7633 /* AllerDisplay.ttf */,
+			);
+			path = Aller;
+			sourceTree = "<group>";
+		};
+		AEE997051B75401C00E7C1B3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0F3B41B72496A00BE7633 /* Player.cpp */,
+				AEA0F3B51B72496A00BE7633 /* Player.h */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		AEE997071B75416900E7C1B3 /* Tilemaps */ = {
+			isa = PBXGroup;
+			children = (
+				AEE997081B75432600E7C1B3 /* Tile.cpp */,
+				AEE997091B75432600E7C1B3 /* Tile.h */,
+				AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */,
+				AEE9970C1B75433300E7C1B3 /* Tilemap.h */,
+			);
+			name = Tilemaps;
+			sourceTree = "<group>";
+		};
+		AEFC65F01B73EC660031F11C /* States */ = {
+			isa = PBXGroup;
+			children = (
+				AEFC66531B7454CE0031F11C /* MenuStates */,
+				AEFC66541B7454D70031F11C /* LevelStates */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		AEFC66471B73FC710031F11C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEE997031B752B2800E7C1B3 /* astronaut_sprite.png */,
+				AEA0F3C81B72CD9B00BE7633 /* fonts */,
+				AEA0F3B21B7247A800BE7633 /* hello_world.bmp */,
+				AEA0F3B11B7247A000BE7633 /* x.bmp */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AEFC66531B7454CE0031F11C /* MenuStates */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0F3C31B72C43B00BE7633 /* mainmenu_state.cpp */,
+				AEA0F3C41B72C43B00BE7633 /* mainmenu_state.h */,
+			);
+			name = MenuStates;
+			sourceTree = "<group>";
+		};
+		AEFC66541B7454D70031F11C /* LevelStates */ = {
+			isa = PBXGroup;
+			children = (
+				AEFC66501B7449C00031F11C /* level_1_state.cpp */,
+				AEFC66511B7449C00031F11C /* level_1_state.h */,
+			);
+			name = LevelStates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +231,7 @@
 				AE825C5E1B71A6F300499A35 /* Sources */,
 				AE825C5F1B71A6F300499A35 /* Frameworks */,
 				AE825C601B71A6F300499A35 /* CopyFiles */,
+				AEFC66481B73FCAE0031F11C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -112,12 +268,36 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AEFC66481B73FCAE0031F11C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFC664F1B73FEEF0031F11C /* Aller_LtIt.ttf in Resources */,
+				AEFC664B1B73FD0C0031F11C /* x.bmp in Resources */,
+				AEFC664A1B73FCF50031F11C /* hello_world.bmp in Resources */,
+				AEFC664E1B73FEEC0031F11C /* Aller_Rg.ttf in Resources */,
+				AEE997041B752B2800E7C1B3 /* astronaut_sprite.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE825C5E1B71A6F300499A35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE825C661B71A6F300499A35 /* main.cpp in Sources */,
+				AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */,
+				AEFC65F31B73EDB40031F11C /* LTexture.cpp in Sources */,
+				AEA0F3C51B72C43B00BE7633 /* mainmenu_state.cpp in Sources */,
+				AEE9970D1B75433300E7C1B3 /* Tilemap.cpp in Sources */,
+				AEE997131B75ACC900E7C1B3 /* tinyxml2.cpp in Sources */,
+				AEA0F3BC1B72B92300BE7633 /* Engine.cpp in Sources */,
+				AEA0F3B61B72496A00BE7633 /* Player.cpp in Sources */,
+				AEFC66521B7449C00031F11C /* level_1_state.cpp in Sources */,
+				AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */,
+				AEE9970A1B75432600E7C1B3 /* Tile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +377,14 @@
 		AE825C6C1B71A6F300499A35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/SDL.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +392,14 @@
 		AE825C6D1B71A6F300499A35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/SDL.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +423,7 @@
 				AE825C6D1B71A6F300499A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
