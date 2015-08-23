@@ -13,16 +13,19 @@
 
 #include "Player.h"
 #include "Tilemap.h"
+#include "Camera.h"
+#include "LevelState.h"
+#include "RunState.h"
 
 #ifndef LEVEL1_H
 #define LEVEL1_H
 
 
 
-class Level1State : public GameState
+class Level1State : public LevelState
 {
 public:
-	void Init(Engine* game);
+	void Init(Engine* game, RunState* run_state);
 	void Cleanup();
     
 	void Pause();
@@ -46,7 +49,6 @@ protected:
 private:
 	static Level1State m_Level1State;
     Tilemap tm;
-    SDL_Rect camera;
 };
 
 #endif

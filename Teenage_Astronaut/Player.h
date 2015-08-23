@@ -10,35 +10,28 @@
 #include "Engine.h"
 #include "LTexture.h"
 #include "Tilemap.h"
+#include "Entity.h"
 
 #ifndef __Teenage_Astronaut__Player__
 #define __Teenage_Astronaut__Player__
 
-enum Direction{UP, DOWN, LEFT, RIGHT,NONE};
 
-
-class Player{
+class Player : public Entity{
+    
 private:
-    double x,y;
-    double vx,vy,v = 300;
+    
     SDL_Rect location;
     LTexture spritesheet;
-    Direction dir;
+    bool player_control;
     Tilemap* tm;
 public:
-    Player();
-    ~Player();
-    void Init(Engine* game,Tilemap* tm, double x = 0, double y = 0);
-    double getX(){return x;};
-    double getY(){return y;};
-    void setX(double x){this->x = x;};
-    void setY(double y){this->y = y;};
     
-    void update(Engine* game);
-    void handleInput(SDL_Event e);
-    void draw(Engine* game, SDL_Rect camera);
+    void Init(Engine* game, Tilemap* tm, double x, double y);
+    void Update(Engine* game);
+    void HandleInput(SDL_Event e);
+    void Draw(Engine* game, Camera* camera);
     
-    int height = 32,width = 32;
+    void Pause();
 };
 
 #include <iostream>

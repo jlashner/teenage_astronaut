@@ -53,7 +53,6 @@ void Tilemap::loadTilemap(string map_path){
     tinyxml2::XMLElement* data_elem = map->FirstChildElement("layer")->FirstChildElement("data");
     string data = data_elem->GetText();
     
-    printf("%d\n", (int)tiles.size());
     readData(data);
         
 }

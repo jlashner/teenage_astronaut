@@ -8,46 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		AE825C9E1B71A8CE00499A35 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE825C9D1B71A8CE00499A35 /* SDL2.framework */; };
+		AE9AB86E1B78397200023DC4 /* dialogue_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE9AB86C1B78397200023DC4 /* dialogue_state.cpp */; };
 		AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE825C651B71A6F300499A35 /* main.cpp */; };
 		AEA0F3B61B72496A00BE7633 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B41B72496A00BE7633 /* Player.cpp */; };
 		AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B71B72523F00BE7633 /* Timer.cpp */; };
 		AEA0F3BC1B72B92300BE7633 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3BA1B72B92300BE7633 /* Engine.cpp */; };
 		AEA0F3C51B72C43B00BE7633 /* mainmenu_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3C31B72C43B00BE7633 /* mainmenu_state.cpp */; };
 		AEA0F3D31B72D00200BE7633 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */; };
-		AEE997041B752B2800E7C1B3 /* astronaut_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE997031B752B2800E7C1B3 /* astronaut_sprite.png */; };
+		AEA2DF8C1B7916E500905864 /* TextBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DF8A1B7916E500905864 /* TextBox.cpp */; };
+		AEA2DFF51B82B11200905864 /* battle_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DFF31B82B11200905864 /* battle_state.cpp */; };
+		AEA2DFF71B82BB2C00905864 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA2DFF61B82BB2C00905864 /* SDL2_mixer.framework */; };
+		AEA2E0011B82C99700905864 /* Song.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DFFF1B82C99700905864 /* Song.cpp */; };
+		AEA2E0041B82C99D00905864 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA2E0021B82C99D00905864 /* Note.cpp */; };
+		AEBD34CC1B879A8A00919E13 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34CA1B879A8A00919E13 /* Camera.cpp */; };
+		AEBD34D41B87DCDA00919E13 /* RunState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34D21B87DCDA00919E13 /* RunState.cpp */; };
+		AEBD34DB1B8910A800919E13 /* Cutscene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34D91B8910A800919E13 /* Cutscene.cpp */; };
+		AEBD34DF1B89320600919E13 /* DialogueBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34DD1B89320600919E13 /* DialogueBox.cpp */; };
 		AEE9970A1B75432600E7C1B3 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE997081B75432600E7C1B3 /* Tile.cpp */; };
 		AEE9970D1B75433300E7C1B3 /* Tilemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */; };
 		AEE997131B75ACC900E7C1B3 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */; };
 		AEFC65F31B73EDB40031F11C /* LTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEFC65F11B73EDB40031F11C /* LTexture.cpp */; };
 		AEFC65F51B73EFA00031F11C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFC65F41B73EFA00031F11C /* SDL2_image.framework */; };
-		AEFC662C1B73FAEA0031F11C /* Teenage_Astronaut in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE825C621B71A6F300499A35 /* Teenage_Astronaut */; };
-		AEFC664A1B73FCF50031F11C /* hello_world.bmp in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B21B7247A800BE7633 /* hello_world.bmp */; };
-		AEFC664B1B73FD0C0031F11C /* x.bmp in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B11B7247A000BE7633 /* x.bmp */; };
-		AEFC664E1B73FEEC0031F11C /* Aller_Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3D01B72CD9B00BE7633 /* Aller_Rg.ttf */; };
-		AEFC664F1B73FEEF0031F11C /* Aller_LtIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3CF1B72CD9B00BE7633 /* Aller_LtIt.ttf */; };
 		AEFC66521B7449C00031F11C /* level_1_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEFC66501B7449C00031F11C /* level_1_state.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		AE825C601B71A6F300499A35 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = usr/share/man/man1;
-			dstSubfolderSpec = 7;
-			files = (
-				AEFC662C1B73FAEA0031F11C /* Teenage_Astronaut in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE825C621B71A6F300499A35 /* Teenage_Astronaut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Teenage_Astronaut; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE825C651B71A6F300499A35 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Teenage_Astronaut.1; sourceTree = "<group>"; };
 		AE825C9D1B71A8CE00499A35 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		AEA0F3B11B7247A000BE7633 /* x.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = x.bmp; path = ../assets/x.bmp; sourceTree = "<group>"; };
-		AEA0F3B21B7247A800BE7633 /* hello_world.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = hello_world.bmp; path = ../assets/hello_world.bmp; sourceTree = "<group>"; };
+		AE9AB86C1B78397200023DC4 /* dialogue_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dialogue_state.cpp; sourceTree = "<group>"; };
+		AE9AB86D1B78397200023DC4 /* dialogue_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dialogue_state.h; sourceTree = "<group>"; };
 		AEA0F3B41B72496A00BE7633 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		AEA0F3B51B72496A00BE7633 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEA0F3B71B72523F00BE7633 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
@@ -57,21 +48,130 @@
 		AEA0F3BE1B72BBA900BE7633 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
 		AEA0F3C31B72C43B00BE7633 /* mainmenu_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainmenu_state.cpp; sourceTree = "<group>"; };
 		AEA0F3C41B72C43B00BE7633 /* mainmenu_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainmenu_state.h; sourceTree = "<group>"; };
-		AEA0F3CA1B72CD9B00BE7633 /* Aller Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Aller Font License.txt"; sourceTree = "<group>"; };
-		AEA0F3CB1B72CD9B00BE7633 /* Aller_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Bd.ttf; sourceTree = "<group>"; };
-		AEA0F3CC1B72CD9B00BE7633 /* Aller_BdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_BdIt.ttf; sourceTree = "<group>"; };
-		AEA0F3CD1B72CD9B00BE7633 /* Aller_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_It.ttf; sourceTree = "<group>"; };
-		AEA0F3CE1B72CD9B00BE7633 /* Aller_Lt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Lt.ttf; sourceTree = "<group>"; };
-		AEA0F3CF1B72CD9B00BE7633 /* Aller_LtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_LtIt.ttf; sourceTree = "<group>"; };
-		AEA0F3D01B72CD9B00BE7633 /* Aller_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Rg.ttf; sourceTree = "<group>"; };
-		AEA0F3D11B72CD9B00BE7633 /* AllerDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllerDisplay.ttf; sourceTree = "<group>"; };
 		AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
-		AEE997031B752B2800E7C1B3 /* astronaut_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut_sprite.png; sourceTree = "<group>"; };
+		AEA2DF8A1B7916E500905864 /* TextBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextBox.cpp; sourceTree = "<group>"; };
+		AEA2DF8B1B7916E500905864 /* TextBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBox.h; sourceTree = "<group>"; };
+		AEA2DFBC1B791F9300905864 /* level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_1.tmx; sourceTree = "<group>"; };
+		AEA2DFBD1B791F9300905864 /* tm.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tm.tmx; sourceTree = "<group>"; };
+		AEA2DFBF1B791F9300905864 /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilesheet.png; sourceTree = "<group>"; };
+		AEA2DFD51B79213500905864 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		AEA2DFD61B79214C00905864 /* Aller_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Rg.ttf; sourceTree = "<group>"; };
+		AEA2DFDB1B7921A500905864 /* astronaut_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut_sprite.png; sourceTree = "<group>"; };
+		AEA2DFDD1B798DD100905864 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		AEA2DFE01B80258E00905864 /* test.diag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.diag; sourceTree = "<group>"; };
+		AEA2DFE51B8245B500905864 /* portraits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portraits.png; sourceTree = "<group>"; };
+		AEA2DFF31B82B11200905864 /* battle_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = battle_state.cpp; sourceTree = "<group>"; };
+		AEA2DFF41B82B11200905864 /* battle_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = battle_state.h; sourceTree = "<group>"; };
+		AEA2DFF61B82BB2C00905864 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		AEA2DFF91B82C0E800905864 /* battle_test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = battle_test.mp3; sourceTree = "<group>"; };
+		AEA2DFFA1B82C0E800905864 /* battle_test.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = battle_test.ogg; sourceTree = "<group>"; };
+		AEA2DFFF1B82C99700905864 /* Song.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Song.cpp; sourceTree = "<group>"; };
+		AEA2E0001B82C99700905864 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		AEA2E0021B82C99D00905864 /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
+		AEA2E0031B82C99D00905864 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		AEBD346B1B858F8E00919E13 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AEBD346D1B858F8E00919E13 /* 80off */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = 80off; sourceTree = "<group>"; };
+		AEBD346E1B858F8E00919E13 /* binasc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = binasc; sourceTree = "<group>"; };
+		AEBD346F1B858F8E00919E13 /* createmidifile */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = createmidifile; sourceTree = "<group>"; };
+		AEBD34701B858F8E00919E13 /* drumtab */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = drumtab; sourceTree = "<group>"; };
+		AEBD34711B858F8E00919E13 /* durations */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = durations; sourceTree = "<group>"; };
+		AEBD34721B858F8E00919E13 /* mid2mat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mid2mat; sourceTree = "<group>"; };
+		AEBD34731B858F8E00919E13 /* midi2binasc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midi2binasc; sourceTree = "<group>"; };
+		AEBD34741B858F8E00919E13 /* midi2melody */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midi2melody; sourceTree = "<group>"; };
+		AEBD34751B858F8E00919E13 /* midi2notes */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midi2notes; sourceTree = "<group>"; };
+		AEBD34761B858F8E00919E13 /* midi2skini */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midi2skini; sourceTree = "<group>"; };
+		AEBD34771B858F8E00919E13 /* midi2text */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midi2text; sourceTree = "<group>"; };
+		AEBD34781B858F8E00919E13 /* midicat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midicat; sourceTree = "<group>"; };
+		AEBD34791B858F8E00919E13 /* midimixup */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = midimixup; sourceTree = "<group>"; };
+		AEBD347A1B858F8E00919E13 /* miditime */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = miditime; sourceTree = "<group>"; };
+		AEBD347B1B858F8E00919E13 /* perfid */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = perfid; sourceTree = "<group>"; };
+		AEBD347C1B858F8E00919E13 /* shutak */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = shutak; sourceTree = "<group>"; };
+		AEBD347D1B858F8E00919E13 /* sysextest */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sysextest; sourceTree = "<group>"; };
+		AEBD347E1B858F8E00919E13 /* text2midi */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = text2midi; sourceTree = "<group>"; };
+		AEBD347F1B858F8E00919E13 /* textmidi */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = textmidi; sourceTree = "<group>"; };
+		AEBD34801B858F8E00919E13 /* toascii */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = toascii; sourceTree = "<group>"; };
+		AEBD34811B858F8E00919E13 /* tobin */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tobin; sourceTree = "<group>"; };
+		AEBD34821B858F8E00919E13 /* tobinary */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tobinary; sourceTree = "<group>"; };
+		AEBD34831B858F8E00919E13 /* todec */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = todec; sourceTree = "<group>"; };
+		AEBD34841B858F8E00919E13 /* tohex */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tohex; sourceTree = "<group>"; };
+		AEBD34851B858F8E00919E13 /* type0 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = type0; sourceTree = "<group>"; };
+		AEBD34861B858F8E00919E13 /* vlv */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = vlv; sourceTree = "<group>"; };
+		AEBD34881B858F8E00919E13 /* Binasc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Binasc.h; sourceTree = "<group>"; };
+		AEBD34891B858F8E00919E13 /* MidiEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiEvent.h; sourceTree = "<group>"; };
+		AEBD348A1B858F8E00919E13 /* MidiEventList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiEventList.h; sourceTree = "<group>"; };
+		AEBD348B1B858F8E00919E13 /* MidiFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiFile.h; sourceTree = "<group>"; };
+		AEBD348C1B858F8E00919E13 /* MidiMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiMessage.h; sourceTree = "<group>"; };
+		AEBD348D1B858F8E00919E13 /* Options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
+		AEBD34901B858F8E00919E13 /* __.SYMDEF */ = {isa = PBXFileReference; lastKnownFileType = file; path = __.SYMDEF; sourceTree = "<group>"; };
+		AEBD34911B858F8E00919E13 /* Binasc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Binasc.o; sourceTree = "<group>"; };
+		AEBD34921B858F8E00919E13 /* MidiEvent.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiEvent.o; sourceTree = "<group>"; };
+		AEBD34931B858F8E00919E13 /* MidiEventList.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiEventList.o; sourceTree = "<group>"; };
+		AEBD34941B858F8E00919E13 /* MidiFile.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiFile.o; sourceTree = "<group>"; };
+		AEBD34951B858F8E00919E13 /* MidiMessage.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiMessage.o; sourceTree = "<group>"; };
+		AEBD34961B858F8E00919E13 /* Options.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Options.o; sourceTree = "<group>"; };
+		AEBD34971B858F8E00919E13 /* libmidifile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmidifile.a; sourceTree = "<group>"; };
+		AEBD34981B858F8E00919E13 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AEBD34991B858F8E00919E13 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AEBD349A1B858F8E00919E13 /* Makefile.library */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.library; sourceTree = "<group>"; };
+		AEBD349B1B858F8E00919E13 /* Makefile.programs */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.programs; sourceTree = "<group>"; };
+		AEBD349D1B858F8E00919E13 /* Binasc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Binasc.o; sourceTree = "<group>"; };
+		AEBD349E1B858F8E00919E13 /* MidiEvent.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiEvent.o; sourceTree = "<group>"; };
+		AEBD349F1B858F8E00919E13 /* MidiEventList.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiEventList.o; sourceTree = "<group>"; };
+		AEBD34A01B858F8E00919E13 /* MidiFile.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiFile.o; sourceTree = "<group>"; };
+		AEBD34A11B858F8E00919E13 /* MidiMessage.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MidiMessage.o; sourceTree = "<group>"; };
+		AEBD34A21B858F8E00919E13 /* Options.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Options.o; sourceTree = "<group>"; };
+		AEBD34A31B858F8E00919E13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		AEBD34A51B858F8E00919E13 /* Binasc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Binasc.cpp; sourceTree = "<group>"; };
+		AEBD34A61B858F8E00919E13 /* MidiEvent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiEvent.cpp; sourceTree = "<group>"; };
+		AEBD34A71B858F8E00919E13 /* MidiEventList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiEventList.cpp; sourceTree = "<group>"; };
+		AEBD34A81B858F8E00919E13 /* MidiFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiFile.cpp; sourceTree = "<group>"; };
+		AEBD34A91B858F8E00919E13 /* MidiMessage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiMessage.cpp; sourceTree = "<group>"; };
+		AEBD34AA1B858F8E00919E13 /* Options.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Options.cpp; sourceTree = "<group>"; };
+		AEBD34AC1B858F8E00919E13 /* 80off.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 80off.cpp; sourceTree = "<group>"; };
+		AEBD34AD1B858F8E00919E13 /* binasc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binasc.cpp; sourceTree = "<group>"; };
+		AEBD34AE1B858F8E00919E13 /* createmidifile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = createmidifile.cpp; sourceTree = "<group>"; };
+		AEBD34AF1B858F8E00919E13 /* drumtab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = drumtab.cpp; sourceTree = "<group>"; };
+		AEBD34B01B858F8E00919E13 /* durations.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = durations.cpp; sourceTree = "<group>"; };
+		AEBD34B11B858F8E00919E13 /* henonfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = henonfile.cpp; sourceTree = "<group>"; };
+		AEBD34B21B858F8E00919E13 /* mid2hum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mid2hum.cpp; sourceTree = "<group>"; };
+		AEBD34B31B858F8E00919E13 /* mid2mat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mid2mat.cpp; sourceTree = "<group>"; };
+		AEBD34B41B858F8E00919E13 /* midi2binasc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midi2binasc.cpp; sourceTree = "<group>"; };
+		AEBD34B51B858F8E00919E13 /* midi2melody.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midi2melody.cpp; sourceTree = "<group>"; };
+		AEBD34B61B858F8E00919E13 /* midi2notes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midi2notes.cpp; sourceTree = "<group>"; };
+		AEBD34B71B858F8E00919E13 /* midi2skini.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midi2skini.cpp; sourceTree = "<group>"; };
+		AEBD34B81B858F8E00919E13 /* midi2text.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midi2text.cpp; sourceTree = "<group>"; };
+		AEBD34B91B858F8E00919E13 /* midicat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midicat.cpp; sourceTree = "<group>"; };
+		AEBD34BA1B858F8E00919E13 /* midiexcerpt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midiexcerpt.cpp; sourceTree = "<group>"; };
+		AEBD34BB1B858F8E00919E13 /* midimixup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = midimixup.cpp; sourceTree = "<group>"; };
+		AEBD34BC1B858F8E00919E13 /* miditime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = miditime.cpp; sourceTree = "<group>"; };
+		AEBD34BD1B858F8E00919E13 /* peep2midi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = peep2midi.cpp; sourceTree = "<group>"; };
+		AEBD34BE1B858F8E00919E13 /* perfid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = perfid.cpp; sourceTree = "<group>"; };
+		AEBD34BF1B858F8E00919E13 /* shutak.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shutak.cpp; sourceTree = "<group>"; };
+		AEBD34C01B858F8E00919E13 /* sysextest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sysextest.cpp; sourceTree = "<group>"; };
+		AEBD34C11B858F8E00919E13 /* text2midi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = text2midi.cpp; sourceTree = "<group>"; };
+		AEBD34C21B858F8E00919E13 /* textmidi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textmidi.cpp; sourceTree = "<group>"; };
+		AEBD34C31B858F8E00919E13 /* toascii.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = toascii.cpp; sourceTree = "<group>"; };
+		AEBD34C41B858F8E00919E13 /* tobin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tobin.cpp; sourceTree = "<group>"; };
+		AEBD34C51B858F8E00919E13 /* tobinary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tobinary.cpp; sourceTree = "<group>"; };
+		AEBD34C61B858F8E00919E13 /* todec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = todec.cpp; sourceTree = "<group>"; };
+		AEBD34C71B858F8E00919E13 /* tohex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tohex.cpp; sourceTree = "<group>"; };
+		AEBD34C81B858F8E00919E13 /* type0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = type0.cpp; sourceTree = "<group>"; };
+		AEBD34C91B858F8E00919E13 /* vlv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vlv.cpp; sourceTree = "<group>"; };
+		AEBD34CA1B879A8A00919E13 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		AEBD34CB1B879A8A00919E13 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		AEBD34CE1B879BA800919E13 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		AEBD34D21B87DCDA00919E13 /* RunState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunState.cpp; sourceTree = "<group>"; };
+		AEBD34D31B87DCDA00919E13 /* RunState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunState.h; sourceTree = "<group>"; };
+		AEBD34D61B87E21A00919E13 /* LevelState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelState.h; sourceTree = "<group>"; };
+		AEBD34D91B8910A800919E13 /* Cutscene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cutscene.cpp; sourceTree = "<group>"; };
+		AEBD34DA1B8910A800919E13 /* Cutscene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cutscene.h; sourceTree = "<group>"; };
+		AEBD34DD1B89320600919E13 /* DialogueBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DialogueBox.cpp; sourceTree = "<group>"; };
+		AEBD34DE1B89320600919E13 /* DialogueBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogueBox.h; sourceTree = "<group>"; };
+		AEBD34E21B89355600919E13 /* dialogue_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialogue_bg.png; sourceTree = "<group>"; };
 		AEE997081B75432600E7C1B3 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
 		AEE997091B75432600E7C1B3 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tilemap.cpp; sourceTree = "<group>"; };
 		AEE9970C1B75433300E7C1B3 /* Tilemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tilemap.h; sourceTree = "<group>"; };
-		AEE9970E1B75459B00E7C1B3 /* test.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.csv; sourceTree = "<group>"; };
 		AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
 		AEE997121B75ACC900E7C1B3 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
 		AEFC65F11B73EDB40031F11C /* LTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LTexture.cpp; sourceTree = "<group>"; };
@@ -86,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA2DFF71B82BB2C00905864 /* SDL2_mixer.framework in Frameworks */,
 				AEFC65F51B73EFA00031F11C /* SDL2_image.framework in Frameworks */,
 				AEA0F3D31B72D00200BE7633 /* SDL2_ttf.framework in Frameworks */,
 				AE825C9E1B71A8CE00499A35 /* SDL2.framework in Frameworks */,
@@ -98,8 +199,9 @@
 		AE825C591B71A6F300499A35 = {
 			isa = PBXGroup;
 			children = (
-				AEE9970E1B75459B00E7C1B3 /* test.csv */,
-				AEFC66471B73FC710031F11C /* Resources */,
+				AEBD346A1B858F8E00919E13 /* MidiFile */,
+				AEA2DF931B791F9300905864 /* assets */,
+				AEA2DFF61B82BB2C00905864 /* SDL2_mixer.framework */,
 				AEFC65F41B73EFA00031F11C /* SDL2_image.framework */,
 				AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */,
 				AE825C9D1B71A8CE00499A35 /* SDL2.framework */,
@@ -122,10 +224,10 @@
 				AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */,
 				AEE997121B75ACC900E7C1B3 /* tinyxml2.h */,
 				AE825C651B71A6F300499A35 /* main.cpp */,
-				AEFC65F01B73EC660031F11C /* States */,
-				AEE997051B75401C00E7C1B3 /* Entities */,
+				AEBD34D11B87DB7A00919E13 /* BattleState */,
+				AEBD34D01B87DB5100919E13 /* RunState */,
+				AEFC66531B7454CE0031F11C /* MenuState */,
 				AEA0F3B71B72523F00BE7633 /* Timer.cpp */,
-				AEE997071B75416900E7C1B3 /* Tilemaps */,
 				AEA0F3B81B72523F00BE7633 /* Timer.h */,
 				AEFC65F11B73EDB40031F11C /* LTexture.cpp */,
 				AEFC65F21B73EDB40031F11C /* LTexture.h */,
@@ -137,33 +239,306 @@
 			path = Teenage_Astronaut;
 			sourceTree = "<group>";
 		};
-		AEA0F3C81B72CD9B00BE7633 /* fonts */ = {
+		AEA2DF931B791F9300905864 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				AEA0F3C91B72CD9B00BE7633 /* Aller */,
+				AEBD34E11B89355600919E13 /* images */,
+				AEA2DFF81B82C0E800905864 /* music */,
+				AEA2DFE41B8245B500905864 /* portraits */,
+				AEA2DFDF1B80258E00905864 /* dialogue */,
+				AEA2DFDA1B7921A500905864 /* sprites */,
+				AEA2DFD31B79213500905864 /* fonts */,
+				AEA2DFBB1B791F9300905864 /* Tilemaps */,
+				AEA2DFBE1B791F9300905864 /* Tilesprites */,
 			);
-			name = fonts;
-			path = ../assets/fonts;
+			path = assets;
 			sourceTree = "<group>";
 		};
-		AEA0F3C91B72CD9B00BE7633 /* Aller */ = {
+		AEA2DFBB1B791F9300905864 /* Tilemaps */ = {
 			isa = PBXGroup;
 			children = (
-				AEA0F3CA1B72CD9B00BE7633 /* Aller Font License.txt */,
-				AEA0F3CB1B72CD9B00BE7633 /* Aller_Bd.ttf */,
-				AEA0F3CC1B72CD9B00BE7633 /* Aller_BdIt.ttf */,
-				AEA0F3CD1B72CD9B00BE7633 /* Aller_It.ttf */,
-				AEA0F3CE1B72CD9B00BE7633 /* Aller_Lt.ttf */,
-				AEA0F3CF1B72CD9B00BE7633 /* Aller_LtIt.ttf */,
-				AEA0F3D01B72CD9B00BE7633 /* Aller_Rg.ttf */,
-				AEA0F3D11B72CD9B00BE7633 /* AllerDisplay.ttf */,
+				AEA2DFBC1B791F9300905864 /* level_1.tmx */,
+				AEA2DFBD1B791F9300905864 /* tm.tmx */,
 			);
-			path = Aller;
+			path = Tilemaps;
+			sourceTree = "<group>";
+		};
+		AEA2DFBE1B791F9300905864 /* Tilesprites */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFBF1B791F9300905864 /* tilesheet.png */,
+			);
+			path = Tilesprites;
+			sourceTree = "<group>";
+		};
+		AEA2DFD31B79213500905864 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFDD1B798DD100905864 /* SourceSansPro-Bold.otf */,
+				AEA2DFD61B79214C00905864 /* Aller_Rg.ttf */,
+				AEA2DFD51B79213500905864 /* SourceSansPro-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		AEA2DFDA1B7921A500905864 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFDB1B7921A500905864 /* astronaut_sprite.png */,
+			);
+			path = sprites;
+			sourceTree = "<group>";
+		};
+		AEA2DFDF1B80258E00905864 /* dialogue */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFE01B80258E00905864 /* test.diag */,
+			);
+			path = dialogue;
+			sourceTree = "<group>";
+		};
+		AEA2DFE41B8245B500905864 /* portraits */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFE51B8245B500905864 /* portraits.png */,
+			);
+			path = portraits;
+			sourceTree = "<group>";
+		};
+		AEA2DFF81B82C0E800905864 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFF91B82C0E800905864 /* battle_test.mp3 */,
+				AEA2DFFA1B82C0E800905864 /* battle_test.ogg */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		AEA2DFFE1B82C8E400905864 /* RhythmClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFFF1B82C99700905864 /* Song.cpp */,
+				AEA2E0001B82C99700905864 /* Song.h */,
+				AEA2E0021B82C99D00905864 /* Note.cpp */,
+				AEA2E0031B82C99D00905864 /* Note.h */,
+			);
+			name = RhythmClasses;
+			sourceTree = "<group>";
+		};
+		AEBD346A1B858F8E00919E13 /* MidiFile */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD346B1B858F8E00919E13 /* .gitignore */,
+				AEBD346C1B858F8E00919E13 /* bin */,
+				AEBD34871B858F8E00919E13 /* include */,
+				AEBD348E1B858F8E00919E13 /* lib */,
+				AEBD34981B858F8E00919E13 /* LICENSE.txt */,
+				AEBD34991B858F8E00919E13 /* Makefile */,
+				AEBD349A1B858F8E00919E13 /* Makefile.library */,
+				AEBD349B1B858F8E00919E13 /* Makefile.programs */,
+				AEBD349C1B858F8E00919E13 /* obj */,
+				AEBD34A31B858F8E00919E13 /* README.md */,
+				AEBD34A41B858F8E00919E13 /* src-library */,
+				AEBD34AB1B858F8E00919E13 /* src-programs */,
+			);
+			name = MidiFile;
+			path = ../../Desktop/MidiFile;
+			sourceTree = "<group>";
+		};
+		AEBD346C1B858F8E00919E13 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD346D1B858F8E00919E13 /* 80off */,
+				AEBD346E1B858F8E00919E13 /* binasc */,
+				AEBD346F1B858F8E00919E13 /* createmidifile */,
+				AEBD34701B858F8E00919E13 /* drumtab */,
+				AEBD34711B858F8E00919E13 /* durations */,
+				AEBD34721B858F8E00919E13 /* mid2mat */,
+				AEBD34731B858F8E00919E13 /* midi2binasc */,
+				AEBD34741B858F8E00919E13 /* midi2melody */,
+				AEBD34751B858F8E00919E13 /* midi2notes */,
+				AEBD34761B858F8E00919E13 /* midi2skini */,
+				AEBD34771B858F8E00919E13 /* midi2text */,
+				AEBD34781B858F8E00919E13 /* midicat */,
+				AEBD34791B858F8E00919E13 /* midimixup */,
+				AEBD347A1B858F8E00919E13 /* miditime */,
+				AEBD347B1B858F8E00919E13 /* perfid */,
+				AEBD347C1B858F8E00919E13 /* shutak */,
+				AEBD347D1B858F8E00919E13 /* sysextest */,
+				AEBD347E1B858F8E00919E13 /* text2midi */,
+				AEBD347F1B858F8E00919E13 /* textmidi */,
+				AEBD34801B858F8E00919E13 /* toascii */,
+				AEBD34811B858F8E00919E13 /* tobin */,
+				AEBD34821B858F8E00919E13 /* tobinary */,
+				AEBD34831B858F8E00919E13 /* todec */,
+				AEBD34841B858F8E00919E13 /* tohex */,
+				AEBD34851B858F8E00919E13 /* type0 */,
+				AEBD34861B858F8E00919E13 /* vlv */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		AEBD34871B858F8E00919E13 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD34881B858F8E00919E13 /* Binasc.h */,
+				AEBD34891B858F8E00919E13 /* MidiEvent.h */,
+				AEBD348A1B858F8E00919E13 /* MidiEventList.h */,
+				AEBD348B1B858F8E00919E13 /* MidiFile.h */,
+				AEBD348C1B858F8E00919E13 /* MidiMessage.h */,
+				AEBD348D1B858F8E00919E13 /* Options.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		AEBD348E1B858F8E00919E13 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD348F1B858F8E00919E13 /* libmidifile */,
+				AEBD34971B858F8E00919E13 /* libmidifile.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		AEBD348F1B858F8E00919E13 /* libmidifile */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD34901B858F8E00919E13 /* __.SYMDEF */,
+				AEBD34911B858F8E00919E13 /* Binasc.o */,
+				AEBD34921B858F8E00919E13 /* MidiEvent.o */,
+				AEBD34931B858F8E00919E13 /* MidiEventList.o */,
+				AEBD34941B858F8E00919E13 /* MidiFile.o */,
+				AEBD34951B858F8E00919E13 /* MidiMessage.o */,
+				AEBD34961B858F8E00919E13 /* Options.o */,
+			);
+			path = libmidifile;
+			sourceTree = "<group>";
+		};
+		AEBD349C1B858F8E00919E13 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD349D1B858F8E00919E13 /* Binasc.o */,
+				AEBD349E1B858F8E00919E13 /* MidiEvent.o */,
+				AEBD349F1B858F8E00919E13 /* MidiEventList.o */,
+				AEBD34A01B858F8E00919E13 /* MidiFile.o */,
+				AEBD34A11B858F8E00919E13 /* MidiMessage.o */,
+				AEBD34A21B858F8E00919E13 /* Options.o */,
+			);
+			path = obj;
+			sourceTree = "<group>";
+		};
+		AEBD34A41B858F8E00919E13 /* src-library */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD34A51B858F8E00919E13 /* Binasc.cpp */,
+				AEBD34A61B858F8E00919E13 /* MidiEvent.cpp */,
+				AEBD34A71B858F8E00919E13 /* MidiEventList.cpp */,
+				AEBD34A81B858F8E00919E13 /* MidiFile.cpp */,
+				AEBD34A91B858F8E00919E13 /* MidiMessage.cpp */,
+				AEBD34AA1B858F8E00919E13 /* Options.cpp */,
+			);
+			path = "src-library";
+			sourceTree = "<group>";
+		};
+		AEBD34AB1B858F8E00919E13 /* src-programs */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD34AC1B858F8E00919E13 /* 80off.cpp */,
+				AEBD34AD1B858F8E00919E13 /* binasc.cpp */,
+				AEBD34AE1B858F8E00919E13 /* createmidifile.cpp */,
+				AEBD34AF1B858F8E00919E13 /* drumtab.cpp */,
+				AEBD34B01B858F8E00919E13 /* durations.cpp */,
+				AEBD34B11B858F8E00919E13 /* henonfile.cpp */,
+				AEBD34B21B858F8E00919E13 /* mid2hum.cpp */,
+				AEBD34B31B858F8E00919E13 /* mid2mat.cpp */,
+				AEBD34B41B858F8E00919E13 /* midi2binasc.cpp */,
+				AEBD34B51B858F8E00919E13 /* midi2melody.cpp */,
+				AEBD34B61B858F8E00919E13 /* midi2notes.cpp */,
+				AEBD34B71B858F8E00919E13 /* midi2skini.cpp */,
+				AEBD34B81B858F8E00919E13 /* midi2text.cpp */,
+				AEBD34B91B858F8E00919E13 /* midicat.cpp */,
+				AEBD34BA1B858F8E00919E13 /* midiexcerpt.cpp */,
+				AEBD34BB1B858F8E00919E13 /* midimixup.cpp */,
+				AEBD34BC1B858F8E00919E13 /* miditime.cpp */,
+				AEBD34BD1B858F8E00919E13 /* peep2midi.cpp */,
+				AEBD34BE1B858F8E00919E13 /* perfid.cpp */,
+				AEBD34BF1B858F8E00919E13 /* shutak.cpp */,
+				AEBD34C01B858F8E00919E13 /* sysextest.cpp */,
+				AEBD34C11B858F8E00919E13 /* text2midi.cpp */,
+				AEBD34C21B858F8E00919E13 /* textmidi.cpp */,
+				AEBD34C31B858F8E00919E13 /* toascii.cpp */,
+				AEBD34C41B858F8E00919E13 /* tobin.cpp */,
+				AEBD34C51B858F8E00919E13 /* tobinary.cpp */,
+				AEBD34C61B858F8E00919E13 /* todec.cpp */,
+				AEBD34C71B858F8E00919E13 /* tohex.cpp */,
+				AEBD34C81B858F8E00919E13 /* type0.cpp */,
+				AEBD34C91B858F8E00919E13 /* vlv.cpp */,
+			);
+			path = "src-programs";
+			sourceTree = "<group>";
+		};
+		AEBD34D01B87DB5100919E13 /* RunState */ = {
+			isa = PBXGroup;
+			children = (
+				AEE997071B75416900E7C1B3 /* Tilemaps */,
+				AEE997051B75401C00E7C1B3 /* Entities */,
+				AEBD34D81B87EACB00919E13 /* Levels */,
+				AEBD34DC1B8922FE00919E13 /* Cutscene */,
+				AE9AB86D1B78397200023DC4 /* dialogue_state.h */,
+				AE9AB86C1B78397200023DC4 /* dialogue_state.cpp */,
+				AEBD34CA1B879A8A00919E13 /* Camera.cpp */,
+				AEBD34CB1B879A8A00919E13 /* Camera.h */,
+				AEBD34D21B87DCDA00919E13 /* RunState.cpp */,
+				AEBD34D31B87DCDA00919E13 /* RunState.h */,
+				AEBD34D61B87E21A00919E13 /* LevelState.h */,
+			);
+			name = RunState;
+			sourceTree = "<group>";
+		};
+		AEBD34D11B87DB7A00919E13 /* BattleState */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DFFE1B82C8E400905864 /* RhythmClasses */,
+				AEA2DFF31B82B11200905864 /* battle_state.cpp */,
+				AEA2DFF41B82B11200905864 /* battle_state.h */,
+			);
+			name = BattleState;
+			sourceTree = "<group>";
+		};
+		AEBD34D81B87EACB00919E13 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				AEFC66501B7449C00031F11C /* level_1_state.cpp */,
+				AEFC66511B7449C00031F11C /* level_1_state.h */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		AEBD34DC1B8922FE00919E13 /* Cutscene */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD34DD1B89320600919E13 /* DialogueBox.cpp */,
+				AEBD34DE1B89320600919E13 /* DialogueBox.h */,
+				AEA2DF8A1B7916E500905864 /* TextBox.cpp */,
+				AEA2DF8B1B7916E500905864 /* TextBox.h */,
+				AEBD34D91B8910A800919E13 /* Cutscene.cpp */,
+				AEBD34DA1B8910A800919E13 /* Cutscene.h */,
+			);
+			name = Cutscene;
+			sourceTree = "<group>";
+		};
+		AEBD34E11B89355600919E13 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD34E21B89355600919E13 /* dialogue_bg.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		AEE997051B75401C00E7C1B3 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				AEBD34CE1B879BA800919E13 /* Entity.h */,
 				AEA0F3B41B72496A00BE7633 /* Player.cpp */,
 				AEA0F3B51B72496A00BE7633 /* Player.h */,
 			);
@@ -181,42 +556,13 @@
 			name = Tilemaps;
 			sourceTree = "<group>";
 		};
-		AEFC65F01B73EC660031F11C /* States */ = {
-			isa = PBXGroup;
-			children = (
-				AEFC66531B7454CE0031F11C /* MenuStates */,
-				AEFC66541B7454D70031F11C /* LevelStates */,
-			);
-			name = States;
-			sourceTree = "<group>";
-		};
-		AEFC66471B73FC710031F11C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AEE997031B752B2800E7C1B3 /* astronaut_sprite.png */,
-				AEA0F3C81B72CD9B00BE7633 /* fonts */,
-				AEA0F3B21B7247A800BE7633 /* hello_world.bmp */,
-				AEA0F3B11B7247A000BE7633 /* x.bmp */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		AEFC66531B7454CE0031F11C /* MenuStates */ = {
+		AEFC66531B7454CE0031F11C /* MenuState */ = {
 			isa = PBXGroup;
 			children = (
 				AEA0F3C31B72C43B00BE7633 /* mainmenu_state.cpp */,
 				AEA0F3C41B72C43B00BE7633 /* mainmenu_state.h */,
 			);
-			name = MenuStates;
-			sourceTree = "<group>";
-		};
-		AEFC66541B7454D70031F11C /* LevelStates */ = {
-			isa = PBXGroup;
-			children = (
-				AEFC66501B7449C00031F11C /* level_1_state.cpp */,
-				AEFC66511B7449C00031F11C /* level_1_state.h */,
-			);
-			name = LevelStates;
+			name = MenuState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,10 +572,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE825C6B1B71A6F300499A35 /* Build configuration list for PBXNativeTarget "Teenage_Astronaut" */;
 			buildPhases = (
+				AEBD34E41B8A547D00919E13 /* ShellScript */,
 				AE825C5E1B71A6F300499A35 /* Sources */,
 				AE825C5F1B71A6F300499A35 /* Frameworks */,
-				AE825C601B71A6F300499A35 /* CopyFiles */,
-				AEFC66481B73FCAE0031F11C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -266,36 +611,46 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		AEFC66481B73FCAE0031F11C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		AEBD34E41B8A547D00919E13 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEFC664F1B73FEEF0031F11C /* Aller_LtIt.ttf in Resources */,
-				AEFC664B1B73FD0C0031F11C /* x.bmp in Resources */,
-				AEFC664A1B73FCF50031F11C /* hello_world.bmp in Resources */,
-				AEFC664E1B73FEEC0031F11C /* Aller_Rg.ttf in Resources */,
-				AEE997041B752B2800E7C1B3 /* astronaut_sprite.png in Resources */,
+			);
+			inputPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "dst=${TARGET_BUILD_DIR}\ncp -R \"${SRCROOT}/assets\" \"$dst\"";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE825C5E1B71A6F300499A35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA2DFF51B82B11200905864 /* battle_state.cpp in Sources */,
+				AE9AB86E1B78397200023DC4 /* dialogue_state.cpp in Sources */,
 				AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */,
 				AEFC65F31B73EDB40031F11C /* LTexture.cpp in Sources */,
 				AEA0F3C51B72C43B00BE7633 /* mainmenu_state.cpp in Sources */,
+				AEBD34DB1B8910A800919E13 /* Cutscene.cpp in Sources */,
 				AEE9970D1B75433300E7C1B3 /* Tilemap.cpp in Sources */,
 				AEE997131B75ACC900E7C1B3 /* tinyxml2.cpp in Sources */,
 				AEA0F3BC1B72B92300BE7633 /* Engine.cpp in Sources */,
+				AEA2E0011B82C99700905864 /* Song.cpp in Sources */,
 				AEA0F3B61B72496A00BE7633 /* Player.cpp in Sources */,
+				AEBD34D41B87DCDA00919E13 /* RunState.cpp in Sources */,
 				AEFC66521B7449C00031F11C /* level_1_state.cpp in Sources */,
+				AEBD34CC1B879A8A00919E13 /* Camera.cpp in Sources */,
 				AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */,
+				AEA2DF8C1B7916E500905864 /* TextBox.cpp in Sources */,
+				AEBD34DF1B89320600919E13 /* DialogueBox.cpp in Sources */,
 				AEE9970A1B75432600E7C1B3 /* Tile.cpp in Sources */,
+				AEA2E0041B82C99D00905864 /* Note.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +737,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks/SDL.framework/Versions/A",
+					/Users/jacoblashner/Desktop/MidiFile/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +753,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks/SDL.framework/Versions/A",
+					/Users/jacoblashner/Desktop/MidiFile/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

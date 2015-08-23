@@ -23,6 +23,8 @@ public:
     
 protected:
 	GameState() { }
+    
+    
 };
 
 #endif

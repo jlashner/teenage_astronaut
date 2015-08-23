@@ -24,6 +24,8 @@ public:
     //Creates image from font string
     bool loadFromRenderedText(std::string textureText, SDL_Color textColor, SDL_Renderer* renderer);
     
+    void loadRectangle(SDL_Rect rect, SDL_Renderer* renderer, SDL_Color color = {0,0,0});
+    
     //Deallocates texture
     void free();
     
@@ -58,6 +60,7 @@ private:
     int mHeight;
     
     TTF_Font* font;
+    std::string font_path;
 };
 
 #endif /* defined(__Teenage_Astronaut__LTexture__) */

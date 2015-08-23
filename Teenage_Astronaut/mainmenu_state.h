@@ -22,7 +22,7 @@
 class MainMenuState : public GameState
 {
 public:
-	void Init(Engine* renderer);
+	void Init(Engine* game);
 	void Cleanup();
     
 	void Pause();

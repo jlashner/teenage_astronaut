@@ -9,27 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Desktop/01_hello_SDL/01_hello_SDL.cpp"
-            timestampString = "460433303.503007"
+            filePath = "Teenage_Astronaut/TextBox.cpp"
+            timestampString = "460950554.966956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5"
-            endingLineNumber = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Teenage_Astronaut/Engine.cpp"
-            timestampString = "460607841.290308"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "Engine::Init(const char *title, int width, int height, int bpp, bool fullscreen)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "TextBox::loadText(SDL_Renderer* renderer, string text)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -39,29 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Teenage_Astronaut/Engine.h"
-            timestampString = "460607841.290308"
+            filePath = "Teenage_Astronaut/dialogue_state.cpp"
+            timestampString = "461893703.923134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "class Engine"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Teenage_Astronaut/introstate.cpp"
-            timestampString = "460504965.275199"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "CIntroState::Update(Engine* game)"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "DialogueState::HandleEvents(Engine *game, SDL_Event event)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -71,14 +41,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Teenage_Astronaut/mainmenu_state.cpp"
-            timestampString = "460665983.187069"
+            filePath = "Teenage_Astronaut/Entity.h"
+            timestampString = "461989778.654201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "MainMenuState::Init(Engine* game)"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "getHitbox()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Teenage_Astronaut/RunState.h"
+            timestampString = "461978499.724905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

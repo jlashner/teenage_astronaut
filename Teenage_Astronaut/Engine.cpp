@@ -8,6 +8,9 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2_ttf/SDL_ttf.h>
+#include <SDL2_mixer/SDL_mixer.h>
+#include <SDL2_image/SDL_image.h>
+
 #include "Engine.h"
 #include "GameState.h"
 #include "Timer.h"
@@ -17,11 +20,15 @@
 void Engine::Init(const char *title, int width, int height, int bpp, bool fullscreen){
     int flags = 0;
 
-    SDL_Init(SDL_INIT_VIDEO);
+    SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
     TTF_Init();
-    font = TTF_OpenFont("/Users/jacoblashner/Teenage_Astronaut/assets/fonts/Aller/Aller_Rg.ttf", 34);
     if(fullscreen)
         flags = SDL_WINDOW_FULLSCREEN;
+    
+    if( Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 ) < 0 )
+    {
+        printf( "SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError() );
+    }
     
     window = SDL_CreateWindow(title,
                               SDL_WINDOWPOS_UNDEFINED,
@@ -60,6 +67,8 @@ void Engine::Cleanup(){
     
 	// shutdown SDL
 	SDL_Quit();
+    Mix_Quit();
+    IMG_Quit();
 }
 
 void Engine::ChangeState(GameState* state)

@@ -11,7 +11,7 @@ int main ( int argc, char *argv[] )
 	Engine game;
     
 	// initialize the engine
-	game.Init( "Engine Test v1.0" );
+	game.Init( "Engine Test v1.0", 640, 360,0, true );
     
 	// load the intro
 	game.ChangeState( MainMenuState::Instance());
@@ -22,6 +22,7 @@ int main ( int argc, char *argv[] )
 		game.HandleEvents();
 		game.Update();
 		game.Draw();
+        SDL_RenderPresent(game.renderer);
 	}
     
 	// cleanup the engine

@@ -9,12 +9,23 @@
 #include "LTexture.h"
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
+#include <SDL2_ttf/SDL_ttf.h>
+#include <sys/stat.h>
+
+
+using namespace std;
 
 LTexture::LTexture(){
+    TTF_Init();
+
+    
     mTexture = NULL;
     mWidth = 0;
     mHeight = 0;
-    font = TTF_OpenFont("/Users/jacoblashner/Teenage_Astronaut/assets/fonts/Aller/Aller_Rg.ttf", 32);
+    font_path = "assets/fonts/source-sans-pro/SourceSansPro-Regular.otf";
+    
+    font = TTF_OpenFont(font_path.c_str(), 32);
+
 }
 
 LTexture::~LTexture(){
@@ -47,6 +58,22 @@ bool LTexture::loadFromFile(std::string path, SDL_Renderer* renderer){
     
     mTexture = newTexture;
     return mTexture != NULL;
+}
+
+void LTexture::loadRectangle(SDL_Rect rect, SDL_Renderer *renderer, SDL_Color color){
+    mTexture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, rect.w, rect.h);
+    mWidth = rect.w;
+    mHeight = rect.h;
+    
+    SDL_SetRenderTarget(renderer, mTexture);
+//    SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+//    SDL_SetTextureBlendMode(mTexture, SDL_BLENDMODE_BLEND);
+    SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b,0);
+    SDL_RenderFillRect(renderer, &rect);
+    
+    SDL_SetRenderTarget(renderer, NULL);
+    
+    
 }
 
 
@@ -86,6 +113,8 @@ bool LTexture::loadFromRenderedText( std::string textureText, SDL_Color textColo
 }
 
 
+
+
 void LTexture::free(){
     if (mTexture != NULL){
         SDL_DestroyTexture(mTexture);
@@ -102,7 +131,7 @@ void LTexture::setColor( Uint8 red, Uint8 green, Uint8 blue )
 }
 
 void LTexture::setBlendMode( SDL_BlendMode blending )
-{
+{ 
     //Set blending function
     SDL_SetTextureBlendMode( mTexture, blending );
 }
@@ -114,7 +143,7 @@ void LTexture::setAlpha( Uint8 alpha )
 }
 
 void LTexture::setFontSize(int size){
-    font = TTF_OpenFont("/Users/jacoblashner/Teenage_Astronaut/assets/fonts/Aller/Aller_Rg.ttf", size);
+    font = TTF_OpenFont(font_path.c_str(), size);
 }
 
 

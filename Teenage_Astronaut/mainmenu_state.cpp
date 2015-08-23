@@ -10,6 +10,8 @@
 #include "mainmenu_state.h"
 #include "LTexture.h"
 #include "level_1_state.h"
+#include "battle_state.h"
+#include "RunState.h"
 
 
 MainMenuState MainMenuState::m_MainMenuState;
@@ -39,7 +41,8 @@ void MainMenuState::HandleEvents(Engine* game, SDL_Event event)
         case SDL_KEYDOWN:
             switch (event.key.keysym.sym) {
                 case SDLK_SPACE:
-                    game->ChangeState( Level1State::Instance() );
+                    ChangeState(game, RunState::Instance() );
+//                    ChangeState(game, BattleState::Instance());
                     break;
                     
                 case SDLK_ESCAPE:
@@ -61,7 +64,4 @@ void MainMenuState::Draw(Engine*game){
 
     text1.render(game->getWidth()/2 - text1.getWidth()/2, 0, game->renderer);
     text2.render(game->getWidth()/2 - text2.getWidth()/2, 100 , game->renderer);
-    
-    SDL_RenderPresent(game->renderer); // Show render on window
-
 }
