@@ -62,6 +62,4 @@ void BattleState::Draw(Engine* game){
     SDL_RenderClear(game->renderer);
     
     song.Draw(game);
-
-    SDL_RenderPresent(game->renderer);
-};
+ };

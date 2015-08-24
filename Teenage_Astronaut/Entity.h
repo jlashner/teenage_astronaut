@@ -29,7 +29,7 @@ protected:
     int width, height;
     LTexture spritesheet;
     
-    bool force_move = false, paused = true;
+    bool paused = true;
     double desired_x, desired_y;
     
 public:
@@ -39,6 +39,7 @@ public:
     virtual void HandleInput(SDL_Event e) = 0;
     virtual void Draw(Engine* game, Camera* camera) = 0;
     
+    bool force_move = false;
     double getX(){return x;}
     double getY(){return y;}
     double getWidth(){return width;}

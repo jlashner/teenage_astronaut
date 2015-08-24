@@ -74,14 +74,16 @@ void Cutscene::NextLine(Engine* game){
                 case MOVE_TO_X: {
                     int ent_index = cur_line->IntAttribute("entity_index");
                     int x_val = cur_line->IntAttribute("value");
-                    cur_level->entities[ent_index]->moveToXPos(x_val);
+                    moving_entity = cur_level->entities[ent_index];
+                    moving_entity->moveToXPos(x_val);
                     break;
                 }
                     
                 case MOVE_TO_Y: {
                     int ent_index = cur_line->IntAttribute("entity_index");
                     int y_val = cur_line->IntAttribute("value");
-                    cur_level->entities[ent_index]->moveToYPos(y_val);
+                    moving_entity = cur_level->entities[ent_index];
+                    moving_entity->moveToYPos(y_val);
                     break;
                 }
 
@@ -129,6 +131,19 @@ void Cutscene::HandleEvents(Engine *game, SDL_Event event){
 
 void Cutscene::Update(Engine *game){
     cur_level->Update(game);
+    switch(cur_command){
+        case MOVE_TO_Y:
+            if (!moving_entity->force_move)
+                NextLine(game);
+            break;
+        case MOVE_TO_X:
+            if (!moving_entity->force_move)
+                NextLine(game);
+            break;
+
+        default:
+            break;
+    }
 }
 
 void Cutscene::Draw(Engine *game){

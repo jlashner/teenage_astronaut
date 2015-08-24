@@ -61,6 +61,9 @@ void Player::Update(Engine* game){
             x = desired_x;
             y = desired_y;
             force_move = false;
+            vx = 0;
+            vy = 0;
+            printf("HERE");
         }
     }
     

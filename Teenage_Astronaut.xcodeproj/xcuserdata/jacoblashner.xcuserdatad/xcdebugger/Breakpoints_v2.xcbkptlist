@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Teenage_Astronaut/Entity.h"
-            timestampString = "461989778.654201"
+            timestampString = "462148545.722712"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "getHitbox()"
             landmarkType = "5">
          </BreakpointContent>

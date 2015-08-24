@@ -23,7 +23,7 @@ void Song::Init(Engine* game, string file_name, double bpm, double delay){
     
     strum_y = game->getHeight()*.8;
     
-    for (int i = 0; i < 4; i++){
+    for (int i = 0; i < 10; i++){
         notes.push_back(Note((i + 5)*beat_length));
     }
     

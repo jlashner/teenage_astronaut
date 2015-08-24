@@ -15,7 +15,8 @@ void DialogueBox::Init(Engine* game){
     bg = LTexture();
     speaker_tex = LTexture();
     photo_tex = LTexture();
-    printf("%d", bg.loadFromFile("assets/images/dialogue_bg4.png", game->renderer));
+    bg.loadFromFile("assets/images/dialogue_bg4.png", game->renderer);
+
     
     dialogue_rect.w = game->getWidth() * .8;
     dialogue_rect.x = game->getWidth()/2 - dialogue_rect.w / 2;

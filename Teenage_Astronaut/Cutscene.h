@@ -59,6 +59,7 @@ private:
     LevelState* cur_level;
     
     command cur_command;
+    Entity* moving_entity;
     
     DialogueBox db;
     

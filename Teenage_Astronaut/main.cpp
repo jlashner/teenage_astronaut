@@ -11,7 +11,7 @@ int main ( int argc, char *argv[] )
 	Engine game;
     
 	// initialize the engine
-	game.Init( "Teenage Astronaut", 640, 360 , 0, true);
+	game.Init( "Teenage Astronaut", 640, 360 , 0, false);
     
 	// load the intro
 	game.ChangeState( MainMenuState::Instance());

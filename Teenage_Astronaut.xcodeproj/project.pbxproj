@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AE825C9E1B71A8CE00499A35 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE825C9D1B71A8CE00499A35 /* SDL2.framework */; };
-		AE9AB86E1B78397200023DC4 /* dialogue_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE9AB86C1B78397200023DC4 /* dialogue_state.cpp */; };
 		AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE825C651B71A6F300499A35 /* main.cpp */; };
 		AEA0F3B61B72496A00BE7633 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B41B72496A00BE7633 /* Player.cpp */; };
 		AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B71B72523F00BE7633 /* Timer.cpp */; };
@@ -37,8 +36,6 @@
 		AE825C651B71A6F300499A35 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Teenage_Astronaut.1; sourceTree = "<group>"; };
 		AE825C9D1B71A8CE00499A35 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		AE9AB86C1B78397200023DC4 /* dialogue_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dialogue_state.cpp; sourceTree = "<group>"; };
-		AE9AB86D1B78397200023DC4 /* dialogue_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dialogue_state.h; sourceTree = "<group>"; };
 		AEA0F3B41B72496A00BE7633 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		AEA0F3B51B72496A00BE7633 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEA0F3B71B72523F00BE7633 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
@@ -484,8 +481,6 @@
 				AEE997051B75401C00E7C1B3 /* Entities */,
 				AEBD34D81B87EACB00919E13 /* Levels */,
 				AEBD34DC1B8922FE00919E13 /* Cutscene */,
-				AE9AB86D1B78397200023DC4 /* dialogue_state.h */,
-				AE9AB86C1B78397200023DC4 /* dialogue_state.cpp */,
 				AEBD34CA1B879A8A00919E13 /* Camera.cpp */,
 				AEBD34CB1B879A8A00919E13 /* Camera.h */,
 				AEBD34D21B87DCDA00919E13 /* RunState.cpp */,
@@ -572,7 +567,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE825C6B1B71A6F300499A35 /* Build configuration list for PBXNativeTarget "Teenage_Astronaut" */;
 			buildPhases = (
-				AEBD34E41B8A547D00919E13 /* ShellScript */,
+				AEBD34E41B8A547D00919E13 /* Run Script */,
 				AE825C5E1B71A6F300499A35 /* Sources */,
 				AE825C5F1B71A6F300499A35 /* Frameworks */,
 			);
@@ -612,13 +607,14 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AEBD34E41B8A547D00919E13 /* ShellScript */ = {
+		AEBD34E41B8A547D00919E13 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,7 +629,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA2DFF51B82B11200905864 /* battle_state.cpp in Sources */,
-				AE9AB86E1B78397200023DC4 /* dialogue_state.cpp in Sources */,
 				AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */,
 				AEFC65F31B73EDB40031F11C /* LTexture.cpp in Sources */,
 				AEA0F3C51B72C43B00BE7633 /* mainmenu_state.cpp in Sources */,

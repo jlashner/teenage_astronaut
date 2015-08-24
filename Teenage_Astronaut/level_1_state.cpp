@@ -7,7 +7,6 @@
 //
 
 #include "level_1_state.h"
-#include "dialogue_state.h"
 #include "RunState.h"
 #include "Cutscene.h"
 using namespace std;
@@ -28,6 +27,8 @@ void Level1State::Init(Engine* game, RunState* run_state){
     level_height = tm.height;
     
     player.Init(game, &tm, 0, 0);
+    
+    entities.push_back(&player);
     
     camera.Init(game);
     camera.SetMap(&tm);
