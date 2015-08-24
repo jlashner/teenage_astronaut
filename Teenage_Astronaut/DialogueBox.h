@@ -20,8 +20,8 @@ public:
     void Init(Engine* game);
     
     void SetText(Engine* game, string text);
-    void SetSpeaker(string speaker);
-    void SetPhoto(string file_path);
+    void SetSpeaker(Engine* game, string speaker);
+    void SetPhoto(Engine* game, string file_path);
     
     void SetDisplay(bool d){display = d;}
     void Draw(Engine* game);

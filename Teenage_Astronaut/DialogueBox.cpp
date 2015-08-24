@@ -13,6 +13,8 @@ using namespace std;
 
 void DialogueBox::Init(Engine* game){
     bg = LTexture();
+    speaker_tex = LTexture();
+    photo_tex = LTexture();
     printf("%d", bg.loadFromFile("assets/images/dialogue_bg4.png", game->renderer));
     
     dialogue_rect.w = game->getWidth() * .8;
@@ -34,11 +36,20 @@ void DialogueBox::SetText(Engine* game, string text){
     text_box.loadText(game->renderer, text);
 }
 
-void DialogueBox::SetSpeaker(string speaker){}
-void DialogueBox::SetPhoto(string file_path){}
+void DialogueBox::SetSpeaker(Engine* game, string speaker){
+    SDL_Color c = {255,255,255,255};
+    speaker_tex.setFontSize(20);
+    speaker_tex.loadFromRenderedText(speaker.append(":"), c, game->renderer);
+    
+}
+
+void DialogueBox::SetPhoto(Engine* game, string file_path){
+    
+}
 
 void DialogueBox::Draw(Engine* game){
     bg.render(0,0,game->renderer, NULL, &dialogue_rect);
+    speaker_tex.render(dialogue_rect.x + dialogue_rect.w/20, dialogue_rect.y + dialogue_rect.h / 10, game->renderer);
     text_box.render(game->renderer);
 }
 

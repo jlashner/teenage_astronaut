@@ -1,3 +1,27 @@
-<line speaker="player">Alright! You crazy kids can really swing it! And I hope you're ready to dance all night until your parents pick you up! </line>
+<line speaker="Band Leader">
+Alright! You crazy kids can really swing it! And I hope you're ready to dance all night until your parents pick you up!
+</line>
 
+<command 
+
+<line speaker="Band Leader">
+Now it's that special time of the night, where we open up the stage to you brave Lower Willow students. Who will challenge me to a rock off!
+</line>
+
+
+<line speaker="Stew">
+This one's for you Becky!
+</line>
+
+<line speaker="Band Leader">
+Alright! What's your name young man?
+</line>
+
+<line speaker="Stew">
+__player_name__
+</line>
+
+<line speaker="Band Leader">
+Get ready Lower Willow, you plucky pigeons. Cause here. We. Go!
+</line>
 

@@ -61,8 +61,10 @@ void Cutscene::NextLine(Engine* game){
 
         if (strcmp(cur_line->Name(),"line")==0){
             cur_command = DISPLAY_LINE;
-            db.SetText(game, cur_line->GetText());
-            
+            string text = cur_line->GetText();
+            text.erase(std::remove(text.begin(), text.end(), '\n'), text.end());
+            db.SetText(game, text);
+            db.SetSpeaker(game, cur_line->Attribute("speaker"));
             // Dialogue stuff
         }
         if (strcmp(cur_line->Name(), "command")==0){
