@@ -41,8 +41,8 @@ void MainMenuState::HandleEvents(Engine* game, SDL_Event event)
         case SDL_KEYDOWN:
             switch (event.key.keysym.sym) {
                 case SDLK_SPACE:
-                    ChangeState(game, RunState::Instance() );
-//                    ChangeState(game, BattleState::Instance());
+//                    ChangeState(game, RunState::Instance() );
+                    ChangeState(game, BattleState::Instance());
                     break;
                     
                 case SDLK_ESCAPE:

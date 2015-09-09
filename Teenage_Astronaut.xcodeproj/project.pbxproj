@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE825C9E1B71A8CE00499A35 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE825C9D1B71A8CE00499A35 /* SDL2.framework */; };
+		AE98903D1B8BDB5A0042B489 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE98903B1B8BDB5A0042B489 /* Animation.cpp */; };
 		AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE825C651B71A6F300499A35 /* main.cpp */; };
 		AEA0F3B61B72496A00BE7633 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B41B72496A00BE7633 /* Player.cpp */; };
 		AEA0F3B91B72523F00BE7633 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3B71B72523F00BE7633 /* Timer.cpp */; };
@@ -23,6 +24,7 @@
 		AEBD34D41B87DCDA00919E13 /* RunState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34D21B87DCDA00919E13 /* RunState.cpp */; };
 		AEBD34DB1B8910A800919E13 /* Cutscene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34D91B8910A800919E13 /* Cutscene.cpp */; };
 		AEBD34DF1B89320600919E13 /* DialogueBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD34DD1B89320600919E13 /* DialogueBox.cpp */; };
+		AEE53B531B96AE63005DEF6B /* libmidifile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBD34971B858F8E00919E13 /* libmidifile.a */; };
 		AEE9970A1B75432600E7C1B3 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE997081B75432600E7C1B3 /* Tile.cpp */; };
 		AEE9970D1B75433300E7C1B3 /* Tilemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */; };
 		AEE997131B75ACC900E7C1B3 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE997111B75ACC900E7C1B3 /* tinyxml2.cpp */; };
@@ -36,6 +38,10 @@
 		AE825C651B71A6F300499A35 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Teenage_Astronaut.1; sourceTree = "<group>"; };
 		AE825C9D1B71A8CE00499A35 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		AE98903B1B8BDB5A0042B489 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
+		AE98903C1B8BDB5A0042B489 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		AE98906F1B8BE2240042B489 /* astronaut_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut_sprite.png; sourceTree = "<group>"; };
+		AE9890701B8BE2240042B489 /* player_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_spritesheet.png; sourceTree = "<group>"; };
 		AEA0F3B41B72496A00BE7633 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		AEA0F3B51B72496A00BE7633 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEA0F3B71B72523F00BE7633 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
@@ -53,7 +59,6 @@
 		AEA2DFBF1B791F9300905864 /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilesheet.png; sourceTree = "<group>"; };
 		AEA2DFD51B79213500905864 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
 		AEA2DFD61B79214C00905864 /* Aller_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aller_Rg.ttf; sourceTree = "<group>"; };
-		AEA2DFDB1B7921A500905864 /* astronaut_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = astronaut_sprite.png; sourceTree = "<group>"; };
 		AEA2DFDD1B798DD100905864 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
 		AEA2DFE01B80258E00905864 /* test.diag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.diag; sourceTree = "<group>"; };
 		AEA2DFE51B8245B500905864 /* portraits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portraits.png; sourceTree = "<group>"; };
@@ -165,6 +170,9 @@
 		AEBD34DD1B89320600919E13 /* DialogueBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DialogueBox.cpp; sourceTree = "<group>"; };
 		AEBD34DE1B89320600919E13 /* DialogueBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogueBox.h; sourceTree = "<group>"; };
 		AEBD34E21B89355600919E13 /* dialogue_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialogue_bg.png; sourceTree = "<group>"; };
+		AEE53B461B96AD73005DEF6B /* intro.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = intro.mid; sourceTree = "<group>"; };
+		AEE53B541B976361005DEF6B /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "/Library/Frameworks/sfml-audio.framework"; sourceTree = "<absolute>"; };
+		AEE53B561B97647A005DEF6B /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
 		AEE997081B75432600E7C1B3 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
 		AEE997091B75432600E7C1B3 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		AEE9970B1B75433300E7C1B3 /* Tilemap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tilemap.cpp; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE53B531B96AE63005DEF6B /* libmidifile.a in Frameworks */,
 				AEA2DFF71B82BB2C00905864 /* SDL2_mixer.framework in Frameworks */,
 				AEFC65F51B73EFA00031F11C /* SDL2_image.framework in Frameworks */,
 				AEA0F3D31B72D00200BE7633 /* SDL2_ttf.framework in Frameworks */,
@@ -196,11 +205,13 @@
 		AE825C591B71A6F300499A35 = {
 			isa = PBXGroup;
 			children = (
+				AEE53B561B97647A005DEF6B /* sfml-graphics.framework */,
 				AEBD346A1B858F8E00919E13 /* MidiFile */,
 				AEA2DF931B791F9300905864 /* assets */,
 				AEA2DFF61B82BB2C00905864 /* SDL2_mixer.framework */,
 				AEFC65F41B73EFA00031F11C /* SDL2_image.framework */,
 				AEA0F3D21B72D00200BE7633 /* SDL2_ttf.framework */,
+				AEE53B541B976361005DEF6B /* sfml-audio.framework */,
 				AE825C9D1B71A8CE00499A35 /* SDL2.framework */,
 				AE825C641B71A6F300499A35 /* Teenage_Astronaut */,
 				AE825C631B71A6F300499A35 /* Products */,
@@ -232,18 +243,29 @@
 				AEA0F3BB1B72B92300BE7633 /* Engine.h */,
 				AEA0F3BE1B72BBA900BE7633 /* GameState.h */,
 				AE825C671B71A6F300499A35 /* Teenage_Astronaut.1 */,
+				AE98903B1B8BDB5A0042B489 /* Animation.cpp */,
+				AE98903C1B8BDB5A0042B489 /* Animation.h */,
 			);
 			path = Teenage_Astronaut;
+			sourceTree = "<group>";
+		};
+		AE98906E1B8BE2240042B489 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				AE98906F1B8BE2240042B489 /* astronaut_sprite.png */,
+				AE9890701B8BE2240042B489 /* player_spritesheet.png */,
+			);
+			path = sprites;
 			sourceTree = "<group>";
 		};
 		AEA2DF931B791F9300905864 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				AE98906E1B8BE2240042B489 /* sprites */,
 				AEBD34E11B89355600919E13 /* images */,
 				AEA2DFF81B82C0E800905864 /* music */,
 				AEA2DFE41B8245B500905864 /* portraits */,
 				AEA2DFDF1B80258E00905864 /* dialogue */,
-				AEA2DFDA1B7921A500905864 /* sprites */,
 				AEA2DFD31B79213500905864 /* fonts */,
 				AEA2DFBB1B791F9300905864 /* Tilemaps */,
 				AEA2DFBE1B791F9300905864 /* Tilesprites */,
@@ -278,14 +300,6 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
-		AEA2DFDA1B7921A500905864 /* sprites */ = {
-			isa = PBXGroup;
-			children = (
-				AEA2DFDB1B7921A500905864 /* astronaut_sprite.png */,
-			);
-			path = sprites;
-			sourceTree = "<group>";
-		};
 		AEA2DFDF1B80258E00905864 /* dialogue */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +319,7 @@
 		AEA2DFF81B82C0E800905864 /* music */ = {
 			isa = PBXGroup;
 			children = (
+				AEE53B451B96AD73005DEF6B /* Midis */,
 				AEA2DFF91B82C0E800905864 /* battle_test.mp3 */,
 				AEA2DFFA1B82C0E800905864 /* battle_test.ogg */,
 			);
@@ -530,6 +545,14 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		AEE53B451B96AD73005DEF6B /* Midis */ = {
+			isa = PBXGroup;
+			children = (
+				AEE53B461B96AD73005DEF6B /* intro.mid */,
+			);
+			path = Midis;
+			sourceTree = "<group>";
+		};
 		AEE997051B75401C00E7C1B3 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -643,6 +666,7 @@
 				AEBD34CC1B879A8A00919E13 /* Camera.cpp in Sources */,
 				AEA0F3B31B72485A00BE7633 /* main.cpp in Sources */,
 				AEA2DF8C1B7916E500905864 /* TextBox.cpp in Sources */,
+				AE98903D1B8BDB5A0042B489 /* Animation.cpp in Sources */,
 				AEBD34DF1B89320600919E13 /* DialogueBox.cpp in Sources */,
 				AEE9970A1B75432600E7C1B3 /* Tile.cpp in Sources */,
 				AEA2E0041B82C99D00905864 /* Note.cpp in Sources */,

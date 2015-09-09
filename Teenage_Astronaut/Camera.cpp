@@ -22,7 +22,9 @@ void Camera::Update(Engine *game){
     if (following){
         SDL_Rect ent_box = following->getHitbox();
         
+
         view.x = ent_box.x - view.w/2 + ent_box.w/2;
+        view.y = ent_box.y - view.h / 2 + ent_box.h/2;
         
         if (view.x < 0){
             view.x = 0;
@@ -31,7 +33,6 @@ void Camera::Update(Engine *game){
             view.x = tm->width - view.w;
         }
         
-        view.y = ent_box.y - view.h / 2 + ent_box.h/2;
         if (view.y < 0){
             view.y = 0;
         }

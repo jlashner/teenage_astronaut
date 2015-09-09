@@ -41,7 +41,7 @@ protected:
 private:
     int next_note = 0;
     static BattleState m_BattleState;
-    double allowed_error = .1; // in seconds
+    double allowed_error = .2; // in seconds
     
     Song song;
 

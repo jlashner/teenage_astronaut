@@ -62,7 +62,7 @@ void Level1State::HandleEvents(Engine *game, SDL_Event event){
 }
 
 void Level1State::Update(Engine *game){
-    player.Update(game);
+    player.Update();
     camera.Update(game);
 }
 
@@ -72,7 +72,7 @@ void Level1State::Draw(Engine *game){
     SDL_RenderClear(game->renderer);
     
     tm.draw(game, camera.getView());
-    player.Draw(game, &camera);
+    player.Draw( &camera);
 }
 
 

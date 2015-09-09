@@ -23,6 +23,7 @@ public:
     double time;
     
     void Init(Engine* game, string file_name, double bpm, double delay);
+    void LoadMidiFile(string filename);
     
     ~Song();
     

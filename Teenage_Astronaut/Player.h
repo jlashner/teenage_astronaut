@@ -11,6 +11,7 @@
 #include "LTexture.h"
 #include "Tilemap.h"
 #include "Entity.h"
+#include "Animation.h"
 
 #ifndef __Teenage_Astronaut__Player__
 #define __Teenage_Astronaut__Player__
@@ -23,13 +24,20 @@ private:
     SDL_Rect location;
     LTexture spritesheet;
     bool player_control;
+    
+    
     Tilemap* tm;
+
 public:
     
     void Init(Engine* game, Tilemap* tm, double x, double y);
-    void Update(Engine* game);
+
+    void LoadAnimation(string file_path, int row, int col_start, int width, int height,
+                       int frames, Animation* a, bool loop = true, bool flip = false);
+    void setAnimation();
+    void Update();
     void HandleInput(SDL_Event e);
-    void Draw(Engine* game, Camera* camera);
+    void Draw(Camera* camera);
     
     void Pause();
 };

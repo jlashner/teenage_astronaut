@@ -18,26 +18,38 @@ class Camera;
 #include "Camera.h"
 #include <cmath>
 
-enum Direction{UP, DOWN, LEFT, RIGHT,NONE};
+#include "Animation.h"
+
+enum MOVEMENT_DIR{UP, DOWN, LEFT, RIGHT,NONE};
+enum MOVEMENT_TYPE{IDLE, WALK};
 
 class Entity{
     
 protected:
     double x, y;
     double vx,vy,vmax;
-    Direction dir;
+    
+    MOVEMENT_DIR move_dir;
+    MOVEMENT_TYPE move_type;
+    
+    Animation walk_up_anim, walk_down_anim, walk_right_anim, walk_left_anim;
+    Animation idle_up_anim, idle_down_anim, idle_right_anim, idle_left_anim;
+    Animation* cur_animation;
+    
     int width, height;
     LTexture spritesheet;
     
     bool paused = true;
     double desired_x, desired_y;
     
+    Engine* game;
+
 public:
 
     virtual void Init(Engine* game, Tilemap* tm, double x, double y) = 0;
-    virtual void Update(Engine* game) = 0;
+    virtual void Update() = 0;
     virtual void HandleInput(SDL_Event e) = 0;
-    virtual void Draw(Engine* game, Camera* camera) = 0;
+    virtual void Draw(Camera* camera) = 0;
     
     bool force_move = false;
     double getX(){return x;}
@@ -46,12 +58,10 @@ public:
     double getHeight(){return height;}
     
     void Pause(){
-//        paused = true;
         vx = 0;
         vy = 0;
     }
     void Unpause(){
-//        paused = false;
     }
     
     void moveToXPos(int d_x){
@@ -60,12 +70,13 @@ public:
         desired_x = d_x;
         desired_y = y;
         vy = 0;
+        move_type = WALK;
         if (desired_x < x){
             vx = -vmax;
-            dir = LEFT;
+            move_dir = LEFT;
         }else{
             vx = vmax;
-            dir= RIGHT;
+            move_dir= RIGHT;
         }
     }
     }
@@ -75,15 +86,17 @@ public:
         desired_y = d_y;
         desired_x = x;
         vx = 0;
+        move_type = WALK;
         if (desired_y < y){
             vy = -vmax;
-            dir = UP;
+            move_dir = UP;
         } else{
             vy = vmax;
-            dir = DOWN;
+            move_dir = DOWN;
         }
         vy = (desired_y < y) ? -vmax : vmax;
     }
+    
     
     SDL_Rect getHitbox(){
         SDL_Rect hitbox = {(int)x,(int)y,(int)width,(int)height};

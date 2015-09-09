@@ -9,6 +9,7 @@
 #include "Song.h"
 #include "Engine.h"
 #include <SDL2_mixer/SDL_mixer.h>
+#include "MidiFile.h"
 
 using namespace std;
 
@@ -23,9 +24,28 @@ void Song::Init(Engine* game, string file_name, double bpm, double delay){
     
     strum_y = game->getHeight()*.8;
     
-    for (int i = 0; i < 10; i++){
-        notes.push_back(Note((i + 5)*beat_length));
-    }
+    LoadMidiFile("assets/music/Midis/intro.mid");
+//    
+//    for (int i = 0; i < 10; i++){
+//        notes.push_back(Note((i + 5)*beat_length));
+//    }
+}
+
+void Song::LoadMidiFile(string filename){
+    MidiFile midi_file;
+    midi_file.read(filename);
+    midi_file.absoluteTicks();
+    midi_file.doTimeAnalysis();
+    
+    MidiEventList& events = midi_file.operator[](0);
+    
+    for (int i = 0; i < events.getSize(); i++)
+        if (events[i].isNoteOn()){
+            notes.push_back(Note(midi_file.getTimeInSeconds(0, i)));
+        }
+    
+    
+
     
 }
 
@@ -57,5 +77,14 @@ void Song::Draw(Engine* game){
         if (note_y > 0 && note_y < game->getHeight())
             notes[i].Draw(game->renderer, game->getWidth()/2, note_y);
     }
+    
+    int beat_y;
+    SDL_SetRenderDrawColor(game->renderer, 100, 100, 100, 255);
+    for (int i = 0; i < 6; i++){
+        beat_y = (strum_y - ((60/BPM - fmod(time, 60/BPM)) + i*60/BPM)*vel);
+//        printf("%d\n", beat_y);
+        SDL_RenderDrawLine(game->renderer, 0, beat_y, 640, beat_y);
+    }
+    
 }
 
